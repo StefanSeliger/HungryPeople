@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry People</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Hero Header -->
+    <header>
+        <%- include("../partials/header.ejs") %>
+    </header>
+
+    <!-- Main -->
+    <main class="bookingMain">
+        <section>
+            <h2>BOOK A TABLE</h2>
+            <img src="/image/underline.png" alt="underline">
+            <!-- Table Booking Form -->
+            <form action="">
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="mail" id="mail" placeholder="Email">
+                </div>
+                <div>
+                    <input type="number" name="phone" id="phone" placeholder="Phone">
+                    <select name="people" id="people" placeholder="People">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="date" name="date" id="date" placeholder="Date">
+                    <select name="time" id="time" placeholder="Time">
+                        <option value="eight">8:00 pm</option>
+                        <option value="eightThirty">8:30 pm</option>
+                        <option value="nine">9:00 pm</option>
+                        <option value="nineThirty">9:30 pm</option>
+                    </select>
+                </div>
+                <input type="submit" value="BOOK NOW">
+            </form>
+        </section>
+        <section>
+            <img src="/image/bookingImg.png" alt="fireplace">
+        </section>
+        <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <%- include("../partials/footer.ejs") %>
+    </footer>
+
+</body>
+
+</html>
