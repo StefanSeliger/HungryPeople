@@ -24,7 +24,7 @@
             <h2>BOOK A TABLE</h2>
             <img src="/image/underline.png" alt="underline">
             <!-- Table Booking Form -->
-            <form action="">
+            <form action="/booking_reservation" method="post">
                 <div>
                     <input type="text" name="name" id="name" placeholder="Name">
                     <input type="email" name="mail" id="mail" placeholder="Email">
@@ -32,21 +32,23 @@
                 <div>
                     <input type="number" name="phone" id="phone" placeholder="Phone">
                     <select name="people" id="people" placeholder="People">
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                        <option value="six">6</option>
+                        <option value="default">People</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
                 </div>
                 <div>
-                    <input type="date" name="date" id="date" placeholder="Date">
+                    <input type="text" name="date" id="date" placeholder="Date (mm/dd)">
                     <select name="time" id="time" placeholder="Time">
-                        <option value="eight">8:00 pm</option>
-                        <option value="eightThirty">8:30 pm</option>
-                        <option value="nine">9:00 pm</option>
-                        <option value="nineThirty">9:30 pm</option>
+                        <option value="Time">Time</option>
+                        <option value="8:00 pm">8:00 pm</option>
+                        <option value="8:30 pm">8:30 pm</option>
+                        <option value="9:00 pm">9:00 pm</option>
+                        <option value="9:30 pm">9:30 pm</option>
                     </select>
                 </div>
                 <input type="submit" value="BOOK NOW">

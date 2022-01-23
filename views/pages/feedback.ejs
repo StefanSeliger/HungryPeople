@@ -25,18 +25,20 @@
             <h2>YOUR FEEDBACK</h2>
             <img src="/image/underline.png" alt="underline">
             <!-- Table Booking Form -->
-            <form action="">
+            <form action="/feedback_confirmation" method="post">
                 <div>
                     <input type="text" name="feedbackName" id="feedbackName" placeholder="Name">
                     <select name="feedbackStars" id="feedbackStars" placeholder="Stars">
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
+                        <option value="">Stars</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
                 </div>
                 <div>
+                    <input type="email" name="feedbackEmail" id="feedbackEmail" placeholder="Email">
                     <input type="text" name="feedbackMessage" id="feedbackMessage" placeholder="Your Message">
                 </div>
                 <div>
